@@ -1,3 +1,8 @@
+* {
+    margin: 0 0;
+    padding: 0 0;
+}
+
 body {
     margin: 0 auto;
     background-color: #23252f;
@@ -5,9 +10,13 @@ body {
     font-family: Roboto;
 }
 
+.spacer {
+    height: 40px;
+}
+
 main {
     margin: 0 auto;
-    max-width: 950px;
+    max-width: 1200px;
 }
 
 section {
@@ -22,15 +31,50 @@ h2 {
     font-size: 42px;
 }
 
+.no-link-style {
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+}
+
 .flex-container {
     display: flex;
 }
 
+#top-bar {
+    background-color: black;
+    color: white;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#top-bar h4 {
+    padding: 12px;
+}
+
+#surple-text {
+    color: #7BB9FF;
+}
 
 header.flex-container {
-    margin: 0 20px;
-    /* margin: 0 20px; */
+    margin: 0 100px;
+    height: 50px;
     justify-content: space-between;
+}
+
+#small-headshot {
+    width: 50px;
+    border-radius: 25px;
+    margin-right: 16px;
+}
+
+#logo-section {
+    align-items: center;
+    color: white;
+}
+
+nav {
+    align-items: center;
 }
 
 nav li {
@@ -40,46 +84,68 @@ nav li {
 
 #banner {
     width: 100%;
-    height: 600px;
-    background-image: url("../images/banner-img.jpg");
-    background-size: cover;
+    height: 500px;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 0;
+}
+
+#banner-text {
+    text-align: center;
+    max-width: 600px;
+}
+#banner-text h2 {
+    margin-bottom: 16px;
+}
+
+#banner-text h1 {
+    margin-bottom: 16px;
+}
+
+.primary-cta-btn {
+    margin: 0 auto;
+    display: block;
+    padding: 14px 30px;
+    border-radius: 15px;
+    color: white;
+    background-color: #5580FF;
+    border: none!important;
+    font-size: 18px;
+    font-weight: 600;
+    font-family: Roboto;
+    cursor: pointer;
+}
+
+#big-image {
     justify-content: center;
     align-items: center;
 }
 
-/* #banner::after {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: red;
-    opacity: 0.7;
-    z-index: 1;
-} */
-
-#banner-text {
-    text-align: center;
+#big-image img {
+    width: 1000px;
+    margin: 0 auto;
+    margin-bottom: 40px;
 }
 
-#projects {
-
-}
+/* PROJECTS GRID */
 
 #projects-title {
     text-align: center;
+    margin-bottom: 100px;
 }
 
 .projects-grid {
     display: grid;
     grid-template-rows: 1fr 1fr;
     grid-template-columns: 1fr 1fr;
-    grid-gap: 50px;
+    row-gap: 100px;
+    column-gap: 100px;
 }
 
 .project-img {
-    height: 200px;
+    height: 280px;
+    border-radius: 10px;
+    border: 2px solid #7BB9FF;
 }
 
 .surple-platform-project-description {
@@ -100,10 +166,69 @@ nav li {
     grid-area: 2 / 2 / span 1 / span 1;
 }
 
+.pricing-slider-project-description {
+    grid-area: 3 / 1 / span 1 / span 1;
+}
 
+.pricing-slider-project-img {
+    
+    grid-area: 3 / 2 / span 1 / span 1;
+}
 
+.mpan-scanner-project-description {
+    grid-area: 4 / 1 / span 1 / span 1;
+}
+
+.mpan-scanner-project-img {
+    grid-area: 4 / 2 / span 1 / span 1;
+}
+
+.project-title {
+    margin-bottom: 20px;
+}
+
+.project-desc {
+    margin-bottom: 28px;
+    line-height: 26px;
+}
+
+.tech-title {
+    margin-bottom: 16px;
+}
+
+.tech-icon {
+    font-size: 24px;
+    margin-right: 8px;
+}
+
+#contact-title {
+    margin-top: 120px;
+    text-align: center;
+    margin-bottom: 36px;
+}
+
+footer.flex-container {
+    margin-top: 120px;
+    padding-left: 100px;
+    padding-right: 100px;
+    height: 70px;
+    background-color: black;
+    justify-content: space-between;
+    align-items: center;
+}
 
 footer h4 {
-    margin-left: 20px;
+    /* padding-left: 100px; */
     text-align: left;
+}
+
+.social-icons {
+    justify-content: flex-end;
+    /* padding-right: 100px; */
+    text-align: right;
+}
+
+.social-icons i {
+    font-size: 28px;
+    margin-right: 20px;
 }
