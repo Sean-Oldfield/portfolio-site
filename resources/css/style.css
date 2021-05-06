@@ -232,3 +232,32 @@ footer h4 {
     font-size: 28px;
     margin-right: 20px;
 }
+
+/* ABOUT ME STYLES */
+
+#about-me {
+    margin-top: 100px;
+    display: grid;
+    grid-template: 1 / 2;
+    gap: 120px;
+    align-items: center;
+}
+
+#about-me-description {
+    grid-area: 1 / 1 / span 1 / span 1;
+}
+
+#about-me-text {
+    line-height: 28px;
+}
+
+#about-me-title {
+    margin-bottom: 18px;
+}
+
+#about-me-img {
+    border: 2px solid #5580FF;
+    border-radius: 15px;
+    height: 360px;
+    grid-area: 1 / 2 / span 1 / span 1;
+}
