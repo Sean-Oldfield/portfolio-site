@@ -31,6 +31,10 @@ h2 {
     font-size: 42px;
 }
 
+h3 {
+    font-size: 22px;
+}
+
 .no-link-style {
     text-decoration: none;
     color: white;
@@ -52,7 +56,7 @@ h2 {
     padding: 12px;
 }
 
-#surple-text {
+.surple-text {
     color: #7BB9FF;
 }
 
@@ -80,6 +84,7 @@ nav {
 nav li {
     padding: 20px;
     display: inline;
+    font-weight: bold;
 }
 
 #banner {
@@ -247,8 +252,9 @@ footer h4 {
     grid-area: 1 / 1 / span 1 / span 1;
 }
 
-#about-me-text {
+.about-me-text {
     line-height: 28px;
+    margin-bottom: 16px;
 }
 
 #about-me-title {
@@ -260,4 +266,33 @@ footer h4 {
     border-radius: 15px;
     height: 360px;
     grid-area: 1 / 2 / span 1 / span 1;
+}
+
+#skills-tech-grid {
+    display: grid;
+    grid-template: 1 / 2;
+    gap: 120px;
+    align-items: baseline;
+}
+
+#skills {
+    grid-area: 1 / 1 / span 1 / span 1;
+}
+
+#technologies {
+    grid-area: 1 / 2 / span 1 / span 1;
+}
+
+#skills-list li {
+    line-height: 26px;
+    margin-left: 20px;
+}
+
+.about-social-icons i {
+    font-size: 28px;
+    margin-right: 8px;
+}
+
+#get-in-touch {
+    max-width: 400px;
 }
