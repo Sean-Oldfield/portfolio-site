@@ -342,5 +342,28 @@ footer h4 {
     section#projects {
         margin-bottom: 40px;
     }
+
+    #about-me {
+        margin-top: 60px;
+        display: block;
+    }
+
+    #skills-tech-grid {
+        display: block;
+    }
+
+    #about-me-img {
+        margin-top: 30px;
+        height: 260px;
+    }
+
+    #skills {
+        margin-bottom: 60px;
+    }
+
+    #technologies i {
+        margin-bottom: 10px;
+    }
     
+
 }
