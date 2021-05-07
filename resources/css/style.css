@@ -364,6 +364,13 @@ footer h4 {
     #technologies i {
         margin-bottom: 10px;
     }
+
+    footer {
+        justify-content: center!important;
+    }
     
+    footer h4 {
+        display: none;
+    }
 
 }
