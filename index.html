@@ -6,6 +6,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link href="resources/css/style.css" rel="stylesheet">
     <script src="https://kit.fontawesome.com/0c6e5c5cde.js" crossorigin="anonymous" defer></script>
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+
     <meta charset="UTF-8">
 </head>
 <body>
@@ -32,7 +34,7 @@
             <h1>Hi! I'm Sean Oldfield.</h1>
             <h3>I'm a full-stack software engineer that specialises in building websites and applications that people love.</h3>
             <div class="spacer"></div>
-            <a href="about.html" class="no-link-style"><button class="primary-cta-btn">Get in touch today</button></a>
+            <a href="about.html" class="no-link-style"><button id="cta-btn-1" class="primary-cta-btn">Get in touch today</button></a>
         </div>
     </section>
 
@@ -66,7 +68,7 @@
                 <img class="surple-platform-project-img project-img" src="resources/images/features-data-diversity.jpg" alt="surple platform screenshot">
             
 
-                <div class="surple-website-project-description">
+                <div class="surple-website-project-description project-item">
                     <h2 class="project-title">Surple Website</h2>
                     <p class="project-desc">I created the Surple website to show off the product and to help generate inbound leads. The website has loads of functionality such as a blog, the ability to book a demo and the option to subscribe to the newsletter.</p>
                     <h3 class="tech-title">Technologies</h3>
@@ -79,7 +81,7 @@
 
                 <img class="surple-website-project-img project-img" src="resources/images/surple-website.jpg" alt="surple website screenshot">
 
-                <div class="pricing-slider-project-description">
+                <div class="pricing-slider-project-description project-item">
                     <h2 class="project-title">Pricing Slider</h2>
                     <p class="project-desc">Surple has a complex pricing model. To make it easy for potential customers to find out the cost of a subscription, I made a pricing slider. The slider allows users to input the number of meters they'd like to connect and returns the monthly cost.</p>
                     <h3 class="tech-title">Technologies</h3>
@@ -90,7 +92,7 @@
 
                 <img class="pricing-slider-project-img project-img" src="resources/images/pricing-slider.jpg" alt="screenshot of the surple pricing slider">
 
-                <div class="mpan-scanner-project-description">
+                <div class="mpan-scanner-project-description project-item">
                     <h2 class="project-title">MPAN Scanner</h2>
                     <p class="project-desc">MPAN stands for Meter Point Administration Number. MPANs are used in the energy industry to identify electricity meters. This MPAN scanner allows energy professionals to check if an MPAN is valid. This can be valuable before attempting to connect the meter to a system like Surple.</p>
                     <h3 class="tech-title">Technologies</h3>
@@ -108,7 +110,7 @@
 
         <section id="contact">
             <h2 id="contact-title">Sound good to you?</h2>
-            <a href="about.html" class="no-link-style"><button class="primary-cta-btn">Get in touch today</button></a>
+            <a href="about.html" class="no-link-style"><button id="cta-btn-2" class="primary-cta-btn">Get in touch today</button></a>
         </section>
 
     </main>
@@ -122,5 +124,32 @@
         </div>
     </footer>
 
+    <script>
+        let button1 = document.getElementById('cta-btn-1'); 
+    
+        const addArrowToBtn1 = () => {
+            button1.innerHTML = 'Get in touch today →';
+        }
+
+        const removeArrowFromBtn1 = () => {
+            button1.innerHTML = 'Get in touch today';
+        }
+
+        button1.onmouseover = addArrowToBtn1;
+        button1.onmouseleave = removeArrowFromBtn1;
+
+        let button2 = document.getElementById('cta-btn-2');
+
+        const addArrowToBtn2 = () => {
+            button2.innerHTML = 'Get in touch today →';
+        }
+
+        const removeArrowFromBtn2 = () => {
+            button2.innerHTML = 'Get in touch today';
+        }
+
+        button2.onmouseover = addArrowToBtn2;
+        button2.onmouseleave = removeArrowFromBtn2;
+    </script>
 </body>
 </html>
