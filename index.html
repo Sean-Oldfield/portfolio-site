@@ -42,7 +42,7 @@
         </div>
     </nav>
 
-    <main>
+    <main id="app" v-cloak>
 
         <section class="container" id="intro">
             <p class="mono green fs-1-rem">Hi, my name is</p>
@@ -89,20 +89,17 @@
             <div class="experience-inner">
                 <div class="experience-jobs">
                     <ul class="mono jobs-list">
-                        <li class="jobs-list-item">Surple</li>
-                        <li class="jobs-list-item">Alacrity</li>
-                        <li class="jobs-list-item">Bootcamp</li>
+                        <li v-bind:class="{ selected: selectedJob === 'surple' }" class="jobs-list-item" @click="selectJob('surple')">Surple</li>
+                        <li v-bind:class="{ selected: selectedJob === 'alacrity' }" class="jobs-list-item" @click="selectJob('alacrity')">Alacrity</li>
+                        <li v-bind:class="{ selected: selectedJob === 'bootcamp' }" class="jobs-list-item" @click="selectJob('bootcamp')">Bootcamp</li>
+                        <li v-bind:class="{ selected: selectedJob === 'university' }" class="jobs-list-item" @click="selectJob('university')">University</li>
                     </ul>
                 </div>
                 <div class="experience-details">
-                    <h3 class="bold job-title">Full-Stack Software Developer <span class="green">@ Surple</span></h3>
-                    <h4 class="mono job-dates">Jan 2018 - Present</h4>
+                    <h3 class="bold job-title">{{ jobs[selectedJob].title }} <span class="green">@ {{ jobs[selectedJob].company }}</span></h3>
+                    <h4 class="mono job-dates">{{ jobs[selectedJob].dates }}</h4>
                     <ul>
-                        <li class="mb-2">Developing and maintaining the company's energy analytics product which helped businesses to understand their energy use.</li>
-                        <li class="mb-2">Working with a small team of developers to bring this new product to life, entirely from scratch.</li>
-                        <li class="mb-2">Writing code on both the front-end and back-end and deploying new product iterations for our users.</li>
-                        <li class="mb-2">The product was built with Laravel and hosted on AWS. It also utilised the JavaScript framework Vue.js on the front-end.</li>
-                        <li>Surple's developers followed the Scrum framework for Agile Software Development. I was responsible for ensuring the team adhered to these principles.</li>
+                        <li v-for="line in jobs[selectedJob].desc" class="mb-2">{{ line }}</li>
                     </ul>
                 </div>
             </div>
@@ -294,5 +291,7 @@
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14"></script>
+    <script src="app.js"></script>
 </body>
 </html>
