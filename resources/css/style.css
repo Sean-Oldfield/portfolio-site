@@ -31,6 +31,16 @@ p {
     line-height: 1.6rem;
 }
 
+a {
+    text-decoration: none;
+    color: #64ffda;
+}
+
+a:hover, a:focus, a:active {
+    text-decoration: none;
+    color: #64ffda;
+}
+
 .green {
     color: #64ffda;
 }
@@ -85,6 +95,10 @@ nav {
 ul {
     list-style: none;
     padding-left: 0;
+}
+
+#s-logo {
+    height: 40px;
 }
 
 /* INTRO SECTION */
@@ -257,6 +271,7 @@ ul {
 /* INTERESTS SECTION */
 
 #photography-img {
+    margin-top: 150px;
     max-width: 350px;
     border-radius: 5px;
     box-shadow: 12px 12px 0 0 #3a3a3a;
