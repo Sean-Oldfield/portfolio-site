@@ -12,6 +12,10 @@ main {
     max-width: 1000px;
 }
 
+section {
+    padding: 100px 0px;
+}
+
 .inner {
     display: grid;
     grid-template-columns: 3fr 2fr;
@@ -159,6 +163,7 @@ ul {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 50px;
+    margin-bottom: 100px;
 }
 
 .project-img {
@@ -225,6 +230,10 @@ ul {
     text-align: center;
 }
 
+.other-project-title {
+    font-size: 1.3rem;
+}
+
 .other-project-desc {
     font-size: 0.9rem;
 }
@@ -253,6 +262,11 @@ ul {
     box-shadow: 12px 12px 0 0 #3a3a3a;
 }
 
+.interests-list {
+    font-size: 0.8rem;
+    line-height: 1.6rem;
+}
+
 /* CONTACT SECTION */
 
 #contact {
@@ -269,4 +283,9 @@ ul {
 
 footer {
     text-align: center;
+}
+
+footer p {
+    padding-bottom: 16px;
+    font-size: 0.7rem;
 }
