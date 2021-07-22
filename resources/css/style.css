@@ -1,8 +1,15 @@
 /* GENERAL STYLING */
 
+body {
+    color: #8892b0;
+    background-color: #0a192f;
+    line-height: 1.3;
+    font-family: "Inter", sans-serif;
+}
+
 main {
     margin: auto;
-    max-width: 900px;
+    max-width: 1000px;
 }
 
 .inner {
@@ -11,15 +18,82 @@ main {
     gap: 50px;
 }
 
+h1, h2, h3, h4, h5, h6 {
+    color: #ccd6f6;
+    font-family: "Inter", sans-serif;
+}
+
+p {
+    line-height: 1.6rem;
+}
+
+.green {
+    color: #64ffda;
+}
+
+.slate {
+    color: #8892b0;
+}
+
+.mono {
+    font-family: 'JetBrains Mono', monospace;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+button {
+    color: #64ffda;
+    background-color: transparent;
+    border: 1px solid #64ffda;
+    border-radius: 4px;
+    padding: 1.25rem 1.75rem;
+    font-family: 'JetBrains Mono', monospace;
+}
+
+.cta-btn {
+    width: 200px;
+}
+
+.fs-1-rem {
+    font-size: 1rem;
+}
+
+.heading-num {
+    font-size: 20px;
+}
+
 /* NAVBAR STYLING */
+
+nav {
+    height: 100px;
+    background-color: #0a192f;
+    padding: 50px;
+}
+
+.nav-link {
+    color: #ccd6f6!important;
+    font-size: 13px;
+    font-family: 'JetBrains Mono', monospace;
+}
+
+ul {
+    list-style: none;
+    padding-left: 0;
+}
 
 /* INTRO SECTION */
 
 #intro {
-    height: 93vh;
+    height: 80vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
+}
+
+.big-heading {
+    font-size: clamp(40px, 8vw, 64px);
 }
 
 #intro-text {
@@ -29,6 +103,7 @@ main {
 /* ABOUT SECTION */
 
 #about-headshot {
+    margin-top: 90px;
     max-width: 350px;
     border-radius: 5px;
     box-shadow: 12px 12px 0 0 #3a3a3a;
@@ -39,10 +114,15 @@ main {
     grid-template-columns: 1fr 1fr;
 }
 
+.tech-lists ul {
+    font-size: 0.8rem;
+    line-height: 1.6rem;
+}
+
 /* EXPERIENCE SECTION */
 
 #experience {
-    max-width: 80%;
+    /* max-width: 80%; */
 }
 
 .experience-inner {
@@ -51,7 +131,29 @@ main {
     gap: 50px;
 }
 
+.jobs-list-item {
+    margin-bottom: 16px;
+    font-size: 0.9rem;
+}
+
+.job-title {
+    font-size: 1.3rem;
+}
+
+.job-dates {
+    font-size: 0.8rem;
+    color: #8892b0;
+}
+
 /* PROJECTS SECTION */
+
+.left {
+    text-align: left;
+}
+
+.right {
+    text-align: right;
+}
 
 .projects-inner {
     display: grid;
@@ -61,12 +163,36 @@ main {
 
 .project-img {
     width: 100%;
+    border-radius: 4px;
 }
 
+.featured-project {
+    font-size: 0.8rem;
+}
+
+.project-title {
+    font-size: 1.5rem;
+}
 
 .project-tech-list {
     display: flex;
-    justify-content: space-between;
+    font-size: 0.8rem;
+}
+
+.project-tech-list.left {
+    justify-content: flex-start;
+}
+
+.project-tech-list.right {
+    justify-content: flex-end;
+}
+
+.project-tech-list.left li {
+    padding: 0 16px 0 0;
+}
+
+.project-tech-list.right li {
+    padding: 0 0 0 16px;
 }
 
 .project-icons {
@@ -83,12 +209,24 @@ main {
 
 .project-icon {
     padding: 0 8px;
+    color: #ccd6f6;
+    font-size: 1.2rem;
 }
 
 /* OTHER PROJECTS SECTION */
 
+.other-project {
+    background: #112240;
+    padding: 40px 30px;
+    border-radius: 4px;
+}
+
 .other-projects-title {
     text-align: center;
+}
+
+.other-project-desc {
+    font-size: 0.9rem;
 }
 
 .other-projects-inner {
@@ -100,6 +238,11 @@ main {
 .other-project-icons {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+}
+
+.fa-folder {
+    font-size: 2.8rem;
 }
 
 /* INTERESTS SECTION */
