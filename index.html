@@ -48,7 +48,7 @@
             <p class="mono green fs-1-rem">Hi, my name is</p>
             <h1 class="bold big-heading">Sean Oldfield.</h1>
             <h2 class="bold slate big-heading mb-4">I build things for the web.</h2>
-            <p id="intro-text">I'm a software engineer specializing in building (and occasionally designing) exceptional digital experiences. Currently, I'm focused on building accessible, human-centered products at <a href="https://surple.co.uk" target="_blank" class="green">Surple</a>.</p>
+            <p id="intro-text">I'm a software engineer specializing in building (and occasionally designing) exceptional digital experiences. Currently, I'm focused on building accessible, human-centered products at <a href="https://surple.co.uk" target="_blank" class="inline-link green">Surple</a>.</p>
             <button class="mt-4 cta-btn"><a target="_blank" href="mailto:seanoldfield95@gmail.com">Get In Touch</a></button>
         </section>
 
@@ -96,7 +96,7 @@
                     </ul>
                 </div>
                 <div class="experience-details">
-                    <h3 class="bold job-title">{{ jobs[selectedJob].title }} <span class="green">@ {{ jobs[selectedJob].company }}</span></h3>
+                    <h3 class="bold job-title">{{ jobs[selectedJob].title }} <span class="green">@ <a target="_blank" v-bind:href="jobs[selectedJob].url" class="inline-link">{{ jobs[selectedJob].company }}</a></span></h3>
                     <h4 class="mono job-dates">{{ jobs[selectedJob].dates }}</h4>
                     <ul>
                         <li v-for="line in jobs[selectedJob].desc" class="mb-2">{{ line }}</li>
@@ -106,17 +106,17 @@
         </section>
 
         <section class="container" id="projects">
-            <h2><span class="green mono heading-num">03.</span> <span class="bold">Projects I've Built</span></h2>
+            <h2><span class="green mono heading-num">03.</span> <span class="bold">My Work</span></h2>
             <hr class="mb-5">
             <div class="projects-inner">
                 <div class="project-image">
                     <img class="project-img" src="resources/images/features-data-diversity.jpg" alt="screenshot of the Surple platform">
                 </div>
                 <div class="project-desc">
-                    <h4 class="mono green featured-project right">Featured Project</h4>
-                    <h3 class="bold project-title right">Surple Analytics Platform</h3>
+                    <h4 class="mono green featured-project right mb-3">Featured Project</h4>
+                    <a target="_blank" href="https://surple.co.uk"><h3 class="bold project-title right">Surple Analytics Platform</h3></a>
                     <p class="right">Surple is an energy management platform that helps businesses to understand their energy use, identify issues and save money and carbon. As well as being a co-founder of Surple, I was also one of the principle developers working on the product.</p>
-                    <ul class="project-tech-list right mono">
+                    <ul class="project-tech-list right mono mt-4">
                         <li>Laravel</li>
                         <li>PHP</li>
                         <li>JavaScript</li>
@@ -132,10 +132,10 @@
 
             <div class="projects-inner">
                 <div class="project-desc">
-                    <h4 class="mono green featured-project left">Featured Project</h4>
-                    <h3 class="bold project-title left">Surple Website</h3>
+                    <h4 class="mono green featured-project left mb-3">Featured Project</h4>
+                    <a target="_blank" href="https://surple.co.uk"><h3 class="bold project-title left">Surple Website</h3></a>
                     <p class="left">I created the Surple website to show off the product and to help generate inbound leads. The website has loads of functionality such as a blog, the ability to book a demo and the option to subscribe to the newsletter.</p>
-                    <ul class="project-tech-list left mono">
+                    <ul class="project-tech-list left mono mt-4">
                         <li>WordPress</li>
                         <li>PHP</li>
                         <li>JavaScript</li>
@@ -156,10 +156,10 @@
                     <img class="project-img" src="resources/images/retro-to-do.jpg" alt="screenshot of the Retro To Do app">
                 </div>
                 <div class="project-desc">
-                    <h4 class="mono green featured-project right">Featured Project</h4>
-                    <h3 class="bold project-title right">Retro To Do</h3>
+                    <h4 class="mono green featured-project right mb-3">Featured Project</h4>
+                    <a target="_blank" href="https://seansurple.github.io/retro-to-do/"><h3 class="bold project-title right">Retro To Do</h3></a>
                     <p class="right">Retro to do is another to do app but with a retro feel like playing an old Mario game. It comes with sounds effects and other cool stuff.</p>
-                    <ul class="project-tech-list right mono">
+                    <ul class="project-tech-list right mono mt-4">
                         <li>JavaScript</li>
                         <li>Vue</li>
                         <li>HTML</li>
@@ -175,10 +175,10 @@
 
             <div class="projects-inner">
                 <div class="project-desc">
-                    <h4 class="mono green featured-project left">Featured Project</h4>
-                    <h3 class="bold project-title left">Memestream</h3>
+                    <h4 class="mono green featured-project left mb-3">Featured Project</h4>
+                    <a target="_blank" href="https://memestream.netlify.app/"><h3 class="bold project-title left">Memestream</h3></a>
                     <p class="left">Memestream uses the reddit API to gather the most popular memes from the most popular subreddits. You can see comments, switch subreddits, search and more.</p>
-                    <ul class="project-tech-list left mono">
+                    <ul class="project-tech-list left mono mt-4">
                         <li>React</li>
                         <li>Redux</li>
                         <li>JavaScript</li>
@@ -210,7 +210,7 @@
                             <a target="_blank" href="https://seanoldfield.tech/"><i class="project-icon fas fa-rocket"></i></a>
                         </span>
                     </div>
-                    <h4 class="other-project-title bold">Portfolio Site</h4>
+                    <a target="_blank" href="https://seanoldfield.tech/"><h4 class="other-project-title bold">Portfolio Site</h4></a>
                     <p class="other-project-desc">The site that you're on now. Hope you like it. I needed something to show off my experience and skills as a developer.</p>
                     <ul class="project-tech-list mt-5 left mono">
                         <li>HTML</li>
@@ -227,7 +227,7 @@
                             <a target="_blank" href="https://surple.co.uk/pricing"><i class="project-icon fas fa-rocket"></i></a>
                         </span>
                     </div>
-                    <h4 class="other-project-title bold">Pricing Slider</h4>
+                    <a target="_blank" href="https://surple.co.uk/pricing"><h4 class="other-project-title bold">Pricing Slider</h4></a>
                     <p class="other-project-desc">The slider allows users to input the number of meters they'd like to connect and returns the monthly cost.</p>
                     <ul class="project-tech-list mt-5 left mono">
                         <li>JavaScript</li>
@@ -243,7 +243,7 @@
                             <a target="_blank" href="https://surple.co.uk/mpan-scanner"><i class="project-icon fas fa-rocket"></i></a>
                         </span>
                     </div>
-                    <h4 class="other-project-title bold">MPAN Scanner</h4>
+                    <a target="_blank" href="https://surple.co.uk/mpan-scanner"><h4 class="other-project-title bold">MPAN Scanner</h4></a>
                     <p class="other-project-desc">This MPAN scanner allows energy professionals to check if an MPAN is valid. This can be valuable before doing something.</p>
                     <ul class="project-tech-list mt-5 left mono">
                         <li>JavaScript</li>

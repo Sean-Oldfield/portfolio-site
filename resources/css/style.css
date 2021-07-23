@@ -38,6 +38,7 @@ p {
 a {
     text-decoration: none;
     color: #64ffda;
+    transition: all 1s ease;
 }
 
 a:hover, a:focus, a:active {
@@ -68,6 +69,11 @@ button {
     border-radius: 4px;
     padding: 1.25rem 1.75rem;
     font-family: 'JetBrains Mono', monospace;
+    transition: all 0.5s ease;
+}
+
+button:hover, button:focus {
+    background-color: rgba(100,255,218,0.1);
 }
 
 .cta-btn {
@@ -94,6 +100,11 @@ nav {
     color: #ccd6f6!important;
     font-size: 13px;
     font-family: 'JetBrains Mono', monospace;
+    transition: all 1s ease-out;
+}
+
+.nav-link:hover, .nav-link:focus {
+    color: #64ffda!important;
 }
 
 ul {
@@ -103,6 +114,14 @@ ul {
 
 #s-logo {
     height: 40px;
+}
+
+.inline-link {
+    transition: all 1s ease;
+}
+
+.inline-link:hover, .inline-link:focus {
+    text-decoration: underline;
 }
 
 /* INTRO SECTION */
@@ -151,10 +170,15 @@ ul {
 }
 
 .jobs-list-item {
-    margin-bottom: 4px;
     padding: 14px 20px;
     font-size: 0.9rem;
     cursor: pointer;
+    transition: all 0.5s ease;
+}
+
+.jobs-list-item:hover, .jobs-list-item:focus {
+    color: #64ffda;
+    background: #112240;
 }
 
 .job-title {
@@ -201,6 +225,11 @@ ul {
 
 .project-title {
     font-size: 1.5rem;
+    transition: all 1s ease;
+}
+
+.project-title:hover, .project-title:focus {
+    color: #64ffda;
 }
 
 .project-tech-list {
@@ -240,6 +269,11 @@ ul {
     padding: 0 8px;
     color: #ccd6f6;
     font-size: 1.2rem;
+    transition: all 1s ease;
+}
+
+.project-icon:hover, .project-icon:focus {
+    color: #64ffda;
 }
 
 /* OTHER PROJECTS SECTION */
@@ -256,6 +290,11 @@ ul {
 
 .other-project-title {
     font-size: 1.3rem;
+    transition: all 1s ease;
+}
+
+.other-project-title:hover, .other-project-title:focus {
+    color: #64ffda;
 }
 
 .other-project-desc {
