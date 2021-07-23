@@ -88,6 +88,21 @@ button:hover, button:focus {
     font-size: 20px;
 }
 
+.img-wrapper {
+    max-width: 350px;
+    background: #64ffda;
+    border-radius: 4px;
+}
+
+.img-wrapper img {
+    opacity: 0.7;
+    transition: all 0.5s linear;
+}
+
+.img-wrapper img:hover {
+    opacity: 1;
+}
+
 /* NAVBAR STYLING */
 
 nav {
@@ -200,10 +215,9 @@ ul {
 /* ABOUT SECTION */
 
 #about-headshot {
-    margin-top: 90px;
     max-width: 350px;
-    border-radius: 5px;
-    border: 2px solid #64ffda;
+    border-radius: 4px;
+    border: 2px solid #112240;
     box-shadow: 12px 12px 0 0 #112240;
 }
 
@@ -215,6 +229,12 @@ ul {
 .tech-lists ul {
     font-size: 0.8rem;
     line-height: 1.6rem;
+}
+
+.about-image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 /* EXPERIENCE SECTION */
@@ -269,10 +289,23 @@ ul {
     margin-bottom: 120px;
 }
 
+.project-img-wrapper {
+    width: 100%;
+    background: #64ffda;
+    border-radius: 4px;
+}
+
 .project-img {
+    opacity: 0.4;
+    transition: all 0.5s linear;
     width: 100%;
     border-radius: 4px;
-    border: 2px solid #64ffda;
+    border: 2px solid #112240;
+    box-shadow: 12px 12px 0 0 #112240;
+}
+
+.project-img:hover {
+    opacity: 1;
 }
 
 .featured-project {
@@ -287,6 +320,13 @@ ul {
 .project-title:hover, .project-title:focus {
     color: #64ffda;
 }
+
+.project-text {
+    background: #112240;
+    border-radius: 4px;
+    padding: 24px 30px;
+}
+
 
 .project-tech-list {
     display: flex;
@@ -376,11 +416,16 @@ ul {
 /* INTERESTS SECTION */
 
 #photography-img {
-    margin-top: 150px;
     max-width: 350px;
-    border-radius: 5px;
-    border: 2px solid #64ffda;
+    border-radius: 4px;
+    border: 2px solid #112240;
     box-shadow: 12px 12px 0 0 #112240;
+}
+
+.interests-image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .interests-list {
