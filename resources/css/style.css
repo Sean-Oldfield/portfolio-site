@@ -124,6 +124,49 @@ ul {
     text-decoration: underline;
 }
 
+/* GUTTER STYLING */
+
+.icons-gutter {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    height: 85vh;
+}
+
+.contact-icons {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contact-icon {
+    color: #8892b0;
+    font-size: 1.4rem;
+    padding: 10px;
+    transition: color 1s ease-out;
+}
+
+.gutter-email {
+    color: #8892b0;
+    writing-mode: vertical-lr;
+    font-size: 0.8rem;
+    font-family: 'JetBrains Mono', monospace;
+    transition: all 1s ease-out;
+}
+
+.contact-icon:hover, .contact-icon:focus {
+    color: #64ffda!important;
+    cursor: pointer;
+}
+
+.gutter-email:hover, .gutter-email:focus {
+    color: #64ffda!important;
+    cursor: pointer;
+}
+
 /* INTRO SECTION */
 
 #intro {
@@ -210,7 +253,7 @@ ul {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 50px;
-    margin-bottom: 100px;
+    margin-bottom: 120px;
 }
 
 .project-img {
