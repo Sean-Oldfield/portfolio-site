@@ -131,7 +131,7 @@ ul {
     flex-direction: column;
     justify-content: flex-end;
     align-items: center;
-    height: 85vh;
+    height: 90vh;
 }
 
 .contact-icons {
@@ -149,12 +149,17 @@ ul {
     transition: color 1s ease-out;
 }
 
+.icons-holder {
+    padding-bottom: 33px;
+}
+
 .gutter-email {
     color: #8892b0;
     writing-mode: vertical-lr;
     font-size: 0.8rem;
     font-family: 'JetBrains Mono', monospace;
     transition: all 1s ease-out;
+    padding-bottom: 33px;
 }
 
 .contact-icon:hover, .contact-icon:focus {
@@ -165,6 +170,14 @@ ul {
 .gutter-email:hover, .gutter-email:focus {
     color: #64ffda!important;
     cursor: pointer;
+}
+
+.vertical-line {
+    content: "";
+    display: block;
+    width: 1px;
+    height: 90px;
+    background-color: #8892b0;
 }
 
 /* INTRO SECTION */
