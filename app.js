@@ -5,15 +5,15 @@ var app = new Vue({
         jobs: {
             surple: {
                 company: 'Surple Energy',
-                title: 'Founder & Full-Stack Software Developer',
+                title: 'Founder & Full-Stack Developer',
                 dates: 'Jan 2018 - Present',
                 url: 'https://surple.co.uk',
                 desc: [
-                    "Developing and maintaining the company's energy analytics product which helped businesses to understand their energy use.",
-                    "Working with a small team of developers to bring this new product to life, entirely from scratch.",
-                    "Writing code on both the front-end and back-end and deploying new product iterations for our users.",
-                    "The product was built with Laravel and hosted on AWS. It also utilised the JavaScript framework Vue.js on the front-end.",
-                    "Surple's developers followed the Scrum framework for Agile Software Development. I was responsible for ensuring the team adhered to these principles."
+                    "Wrote modern, performant, maintainable code whilst building Surple's energy analytics product entirely from scratch.",
+                    "Delivered software to a diverse array of large clients, including an energy supplier, a hospitality resort and a city council.",
+                    "Worked with various front-end and back-end languages, platforms and frameworks such as Laravel, PHP, JavaScript, Vue, HTML & CSS, MySQL and AWS.",
+                    "Communicated and worked with stakeholders including engineers, product managers and clients on a daily basis in an agile software development environment.",
+                    "Played an instrumental part in Surple winning Green Startup of the Year at the Wales Startup Awards and being selected for Google's UK Immersion Programme and Tech Nation's Net Zero and Rising Stars programmes."
                 ]
             },
             alacrity: {
@@ -25,7 +25,7 @@ var app = new Vue({
                     "The Alacrity Foundation is an entrepreneurship course designed to empower graduates to create the next generation of technology companies.",
                     "During my time at Alacrity, I received mentorship from more than 70 world-class mentors in various fields, such as entrepreneurship, software development, marketing, and business administration.",
                     "As a Technical Lead, it was my responsibility to build a scalable product that could take advantage of an exciting market opportunity.",
-                    "I graduated from The Alacrity Foundation by founding my energy startup, Surple and securing venture capital investment to help grow the company."
+                    "I graduated from The Alacrity Foundation by founding my energy startup, Surple and securing £250,000 in venture capital investment to help grow the company."
                 ]
             },
             bootcamp: {
@@ -35,7 +35,7 @@ var app = new Vue({
                 url: 'https://alacrityfoundation.co.uk/',
                 desc: [
                     "Before joining The Alacrity Foundation, everything I knew about software development was self-taught. To prove myself, I had to complete an eight-week software development bootcamp.",
-                    "I successfully completed the bootcamp after building and presenting my final project — a web app that helped with recruitment. This secured my place on The Alacrity Foundation's entrepreneurship programme.",
+                    "I successfully completed the bootcamp after building and presenting my final project — a web app that simplified the recruitment process. This secured my place on The Alacrity Foundation's entrepreneurship programme.",
                     "During my time on the bootcamp, I acquired valuable knowledge about software development fundamentals and was introduced to technologies, including PHP, HTML, CSS, Javascript, Git, and MySQL."
                 ]
             },

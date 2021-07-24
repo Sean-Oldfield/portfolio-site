@@ -274,6 +274,10 @@ ul {
     border-left: 2px solid #64ffda;
 }
 
+.experience-list {
+    list-style: circle;
+}
+
 /* PROJECTS SECTION */
 
 .left {
