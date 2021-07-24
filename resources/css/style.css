@@ -1,7 +1,10 @@
 /* GENERAL STYLING */
-
 [v-cloak] {
     display: none
+}
+
+html.sr .scroll-reveal, html.sr .scroll-reveal-early {
+    visibility: hidden;
 }
 
 body {
@@ -207,7 +210,7 @@ ul {
 /* INTRO SECTION */
 
 #intro {
-    height: 80vh;
+    height: 88vh;
     display: flex;
     flex-direction: column;
     justify-content: center;

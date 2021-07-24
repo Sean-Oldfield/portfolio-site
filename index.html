@@ -10,9 +10,10 @@
     <script src="https://kit.fontawesome.com/0c6e5c5cde.js" crossorigin="anonymous" defer></script>
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
     <meta charset="UTF-8">
+    <script src="https://unpkg.com/scrollreveal"></script>
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark">
+    <nav class="navbar navbar-expand-lg navbar-dark scroll-reveal-early">
         <div class="container-fluid">
             <a class="navbar-brand green mono" href="index.html">
                 <img id="s-logo" src="resources/images/s_logo_green.png" alt="sean oldfield logo">
@@ -45,7 +46,7 @@
     <div class="container">
         <div class="row">
 
-            <aside class="d-none d-sm-none d-md-flex col-1 icons-gutter left">
+            <aside class="d-none d-sm-none d-md-flex col-1 icons-gutter left scroll-reveal-early">
                 <ul class="contact-icons">
                     <span class="icons-holder">
                         <li><a target="_blank" href="https://github.com/SeanSurple"><i class="fab fa-github contact-icon"></i></a></li>
@@ -59,7 +60,7 @@
             <div class="col-xs-12 col-md-10">
                 <main id="app" v-cloak>
 
-                    <section id="intro">
+                    <section id="intro" class="scroll-reveal">
                         <p class="mono green fs-1-rem">Hi, my name is</p>
                         <h1 class="bold big-heading">Sean Oldfield.</h1>
                         <h2 class="bold slate big-heading mb-4">I build things for the web.</h2>
@@ -67,7 +68,7 @@
                         <button class="mt-4 cta-btn"><a target="_blank" href="mailto:seanoldfield95@gmail.com">Get In Touch</a></button>
                     </section>
 
-                    <section id="about">
+                    <section id="about" class="scroll-reveal">
                         <div class="inner">
                             <div class="about-text">
                                 <h2><span class="green mono heading-num">01.</span> <span class="bold">About Me</span></h2>
@@ -102,7 +103,7 @@
                         </div>
                     </section>
 
-                    <section id="experience">
+                    <section id="experience" class="scroll-reveal">
                         <h2><span class="green mono heading-num">02.</span><span class="bold"> My Experience</span></h2>
                         <hr class="mb-5">
                         <div class="experience-inner">
@@ -126,7 +127,7 @@
                         </div>
                     </section>
 
-                    <section id="projects">
+                    <section id="projects" class="scroll-reveal">
                         <h2><span class="green mono heading-num">03.</span> <span class="bold">My Work</span></h2>
                         <hr class="mb-5">
                         <div class="projects-inner">
@@ -233,10 +234,10 @@
                         </div>
 
 
-                        <h3 class="other-projects-title bold">Other Projects</h3>
-                        <hr class="mb-5">
+                        <h3 class="other-projects-title bold scroll-reveal-early">Other Projects</h3>
+                        <hr class="mb-5 scroll-reveal-early">
 
-                        <div class="other-projects-inner">
+                        <div class="other-projects-inner scroll-reveal-early">
                             <div class="other-project">
                                 <div class="other-project-icons mb-4">
                                     <i class="far fa-folder green"></i>
@@ -290,7 +291,7 @@
 
                     </section>
 
-                    <section id="interests">
+                    <section id="interests" class="scroll-reveal">
                         <div class="inner">
                             <div class="interests-text">
                                 <h2><span class="green mono heading-num">04.</span> <span class="bold">My Interests</span></h2>
@@ -315,7 +316,7 @@
                         </div>
                     </section>
 
-                    <section id="contact">
+                    <section id="contact" class="scroll-reveal">
                         <h3 class="green mono fs-1-rem mb-2">05. What's Next?</h3>
                         <h1 class="bold mb-3">Get In Touch</h1>
                         <p id="contact-text" class="mb-5">Although I'm not currently looking for a new job, my inbox is always open. Whether you have a question or want to say hi, drop me an email, and I'll do my best to get back to you!</p>
@@ -325,7 +326,7 @@
                 </main>
             </div>
 
-            <aside class="d-none d-sm-none d-md-flex col-1 icons-gutter right">
+            <aside class="d-none d-sm-none d-md-flex col-1 icons-gutter right scroll-reveal-early">
                 <ul class="contact-icons">
                     <a target="_blank" href="mailto:seanoldfield95@gmail.com"><li class="gutter-email">seanoldfield95@gmail.com</li></a>
                     <li class="vertical-line"></li>
@@ -347,5 +348,9 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14"></script>
     <script src="app.js"></script>
+    <script>  
+        ScrollReveal().reveal('.scroll-reveal-early', { delay: 200 }); 
+        ScrollReveal().reveal('.scroll-reveal', { delay: 500 });
+    </script>
 </body>
 </html>
