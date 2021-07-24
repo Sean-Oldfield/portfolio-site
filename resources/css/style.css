@@ -147,8 +147,15 @@ ul {
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-    align-items: center;
     height: 90vh;
+}
+
+.icons-gutter.left {
+    align-items: flex-start;
+}
+
+.icons-gutter.right {
+    align-items: flex-end;
 }
 
 .contact-icons {
@@ -461,6 +468,12 @@ ul {
 
 footer {
     text-align: center;
+}
+
+.footer-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 footer p {
