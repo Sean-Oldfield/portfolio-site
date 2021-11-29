@@ -6,7 +6,7 @@ var app = new Vue({
             surple: {
                 company: 'Surple Energy',
                 title: 'Founder & Full-Stack Software Engineer',
-                dates: 'Jan 2018 - Present',
+                dates: 'Jan 2018 - Nov 2021',
                 url: 'https://surple.co.uk',
                 desc: [
                     "Wrote modern, performant, maintainable code whilst building Surple's energy analytics product entirely from scratch.",

@@ -1,358 +1,1035 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <title>Sean Oldfield</title>
-    <link rel="shortcut icon" type="image/jpg" href="resources/images/s-logo-fav.png"/>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=JetBrains+Mono:wght@300&display=swap" rel="stylesheet">    <link href="resources/css/style.css" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/0c6e5c5cde.js" crossorigin="anonymous" defer></script>
-    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-    <meta charset="UTF-8">
-    <script src="https://unpkg.com/scrollreveal"></script>
-</head>
-<body>
-    <nav class="navbar navbar-expand-lg navbar-dark scroll-reveal-early">
-        <div class="container-fluid">
-            <a class="navbar-brand green mono" href="index.html">
-                <img id="s-logo" src="resources/images/s_logo_green.png" alt="sean oldfield logo">
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#about"><span class="mono green">01.</span> About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#experience"><span class="mono green">02.</span> Experience</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#projects"><span class="mono green">03.</span> Projects</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#interests"><span class="mono green">04.</span> Interests</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#contact"><span class="mono green">05.</span> Contact</a>
-                    </li>
-                </ul>
+    <head>
+        <title>Sean Oldfield</title>
+        <link
+            rel="shortcut icon"
+            type="image/jpg"
+            href="resources/images/s-logo-fav.png"
+        />
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+            crossorigin="anonymous"
+        />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=JetBrains+Mono:wght@300&display=swap"
+            rel="stylesheet"
+        />
+        <link href="resources/css/style.css" rel="stylesheet" />
+        <script
+            src="https://kit.fontawesome.com/0c6e5c5cde.js"
+            crossorigin="anonymous"
+            defer
+        ></script>
+        <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+        <meta charset="UTF-8" />
+        <script src="https://unpkg.com/scrollreveal"></script>
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-lg navbar-dark scroll-reveal-early">
+            <div class="container-fluid">
+                <a class="navbar-brand green mono" href="index.html">
+                    <img
+                        id="s-logo"
+                        src="resources/images/s_logo_green.png"
+                        alt="sean oldfield logo"
+                    />
+                </a>
+                <button
+                    class="navbar-toggler"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#navbarNav"
+                    aria-controls="navbarNav"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation"
+                >
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#about"
+                                ><span class="mono green">01.</span> About</a
+                            >
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#experience"
+                                ><span class="mono green">02.</span>
+                                Experience</a
+                            >
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#projects"
+                                ><span class="mono green">03.</span> Projects</a
+                            >
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#interests"
+                                ><span class="mono green">04.</span>
+                                Interests</a
+                            >
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact"
+                                ><span class="mono green">05.</span> Contact</a
+                            >
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <div class="container">
+            <div class="row">
+                <aside
+                    class="
+                        d-none d-sm-none d-md-flex
+                        col-1
+                        icons-gutter
+                        left
+                        scroll-reveal-early
+                    "
+                >
+                    <ul class="contact-icons">
+                        <span class="icons-holder">
+                            <li>
+                                <a
+                                    target="_blank"
+                                    href="https://github.com/Sean-Oldfield"
+                                    ><i class="fab fa-github contact-icon"></i
+                                ></a>
+                            </li>
+                            <li>
+                                <a
+                                    target="_blank"
+                                    href="https://www.linkedin.com/in/sean-oldfield-a8a26a121/"
+                                    ><i class="fab fa-linkedin contact-icon"></i
+                                ></a>
+                            </li>
+                            <li>
+                                <a
+                                    target="_blank"
+                                    href="https://www.instagram.com/s.j.o.photography/"
+                                    ><i
+                                        class="fab fa-instagram contact-icon"
+                                    ></i
+                                ></a>
+                            </li>
+                        </span>
+                        <li class="vertical-line"></li>
+                    </ul>
+                </aside>
+
+                <div class="col-xs-12 col-md-10">
+                    <main id="app" v-cloak>
+                        <section id="intro" class="scroll-reveal">
+                            <p class="mono green fs-1-rem">Hi, my name is</p>
+                            <h1 class="bold big-heading">Sean Oldfield.</h1>
+                            <h2 class="bold slate big-heading mb-4">
+                                I build things for the web.
+                            </h2>
+                            <p id="intro-text">
+                                I'm a software engineer from Wales that
+                                specialises in designing and building
+                                exceptional digital products.
+                            </p>
+                            <button class="mt-4 cta-btn">
+                                <a
+                                    target="_blank"
+                                    href="mailto:seanoldfield95@gmail.com"
+                                    >Get In Touch</a
+                                >
+                            </button>
+                        </section>
+
+                        <section id="about" class="scroll-reveal">
+                            <div class="inner">
+                                <div class="about-text">
+                                    <h2>
+                                        <span class="green mono heading-num"
+                                            >01.</span
+                                        >
+                                        <span class="bold">About Me</span>
+                                    </h2>
+                                    <hr class="mb-5" />
+                                    <p>
+                                        Hello! I'm Sean. I'm a full-stack
+                                        software developer with 4+ years of
+                                        experience designing, building, testing,
+                                        and maintaining software. My journey in
+                                        tech is pretty unusual. At the age of
+                                        21, I was studying Biology at university
+                                        and hadn't written a line of code in my
+                                        life. Only a year later, I founded my
+                                        first tech startup.
+                                    </p>
+                                    <p>
+                                        Fast-forward to today, and I've
+                                        delivered software to large clients,
+                                        including an energy supplier, a hotel
+                                        resort and a city council. I have also
+                                        realised my passion for building tech
+                                        that has a positive impact.
+                                    </p>
+                                    <p>
+                                        So far in my career, I've been exposed
+                                        to loads of different programming
+                                        languages and frameworks. Here are a few
+                                        I've been working with recently:
+                                    </p>
+                                    <div class="tech-lists">
+                                        <ul class="mono">
+                                            <li>
+                                                <i
+                                                    class="
+                                                        fas
+                                                        fa-caret-right
+                                                        green
+                                                    "
+                                                ></i>
+                                                Laravel
+                                            </li>
+                                            <li>
+                                                <i
+                                                    class="
+                                                        fas
+                                                        fa-caret-right
+                                                        green
+                                                    "
+                                                ></i>
+                                                PHP
+                                            </li>
+                                            <li>
+                                                <i
+                                                    class="
+                                                        fas
+                                                        fa-caret-right
+                                                        green
+                                                    "
+                                                ></i>
+                                                JavaScript
+                                            </li>
+                                            <li>
+                                                <i
+                                                    class="
+                                                        fas
+                                                        fa-caret-right
+                                                        green
+                                                    "
+                                                ></i>
+                                                React
+                                            </li>
+                                            <li>
+                                                <i
+                                                    class="
+                                                        fas
+                                                        fa-caret-right
+                                                        green
+                                                    "
+                                                ></i>
+                                                Vue
+                                            </li>
+                                            <li>
+                                                <i
+                                                    class="
+                                                        fas
+                                                        fa-caret-right
+                                                        green
+                                                    "
+                                                ></i>
+                                                HTML & CSS
+                                            </li>
+                                        </ul>
+                                        <ul class="mono">
+                                            <li>
+                                                <i
+                                                    class="
+                                                        fas
+                                                        fa-caret-right
+                                                        green
+                                                    "
+                                                ></i>
+                                                MySQL
+                                            </li>
+                                            <li>
+                                                <i
+                                                    class="
+                                                        fas
+                                                        fa-caret-right
+                                                        green
+                                                    "
+                                                ></i>
+                                                Symfony
+                                            </li>
+                                            <li>
+                                                <i
+                                                    class="
+                                                        fas
+                                                        fa-caret-right
+                                                        green
+                                                    "
+                                                ></i>
+                                                Git
+                                            </li>
+                                            <li>
+                                                <i
+                                                    class="
+                                                        fas
+                                                        fa-caret-right
+                                                        green
+                                                    "
+                                                ></i>
+                                                AWS
+                                            </li>
+                                            <li>
+                                                <i
+                                                    class="
+                                                        fas
+                                                        fa-caret-right
+                                                        green
+                                                    "
+                                                ></i>
+                                                WordPress
+                                            </li>
+                                            <li>
+                                                <i
+                                                    class="
+                                                        fas
+                                                        fa-caret-right
+                                                        green
+                                                    "
+                                                ></i>
+                                                Shopify
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="about-image">
+                                    <div class="img-wrapper">
+                                        <a
+                                            target="_blank"
+                                            href="https://www.linkedin.com/in/sean-oldfield-a8a26a121/"
+                                        >
+                                            <img
+                                                id="about-headshot"
+                                                src="resources/images/headshot.jpeg"
+                                                alt="picture of Sean Oldfield"
+                                            />
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+
+                        <section id="experience" class="scroll-reveal">
+                            <h2>
+                                <span class="green mono heading-num">02.</span
+                                ><span class="bold"> My Experience</span>
+                            </h2>
+                            <hr class="mb-5" />
+                            <div class="experience-inner">
+                                <div class="experience-jobs">
+                                    <ul class="mono jobs-list">
+                                        <li
+                                            v-bind:class="{ selected: selectedJob === 'surple' }"
+                                            class="jobs-list-item"
+                                            @click="selectJob('surple')"
+                                        >
+                                            Surple
+                                        </li>
+                                        <li
+                                            v-bind:class="{ selected: selectedJob === 'alacrity' }"
+                                            class="jobs-list-item"
+                                            @click="selectJob('alacrity')"
+                                        >
+                                            Alacrity
+                                        </li>
+                                        <li
+                                            v-bind:class="{ selected: selectedJob === 'bootcamp' }"
+                                            class="jobs-list-item"
+                                            @click="selectJob('bootcamp')"
+                                        >
+                                            Bootcamp
+                                        </li>
+                                        <li
+                                            v-bind:class="{ selected: selectedJob === 'university' }"
+                                            class="jobs-list-item"
+                                            @click="selectJob('university')"
+                                        >
+                                            University
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="experience-details">
+                                    <h3 class="bold job-title">
+                                        {{ jobs[selectedJob].title }}
+                                        <span class="green"
+                                            >@
+                                            <a
+                                                target="_blank"
+                                                v-bind:href="jobs[selectedJob].url"
+                                                class="inline-link"
+                                                >{{ jobs[selectedJob].company
+                                                }}</a
+                                            ></span
+                                        >
+                                    </h3>
+                                    <h4 class="mono job-dates mb-4">
+                                        {{ jobs[selectedJob].dates }}
+                                    </h4>
+                                    <ul class="experience-list">
+                                        <li
+                                            v-for="line in jobs[selectedJob].desc"
+                                            class="mb-3"
+                                        >
+                                            {{ line }}
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </section>
+
+                        <section id="projects" class="scroll-reveal">
+                            <h2>
+                                <span class="green mono heading-num">03.</span>
+                                <span class="bold">My Work</span>
+                            </h2>
+                            <hr class="mb-5" />
+                            <div class="projects-inner">
+                                <div class="project-image">
+                                    <div class="project-img-wrapper">
+                                        <a
+                                            target="_blank"
+                                            href="https://surple.co.uk"
+                                        >
+                                            <img
+                                                class="project-img"
+                                                src="resources/images/features-data-diversity.jpg"
+                                                alt="screenshot of the Surple platform"
+                                            />
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="project-desc">
+                                    <h4
+                                        class="
+                                            mono
+                                            green
+                                            featured-project
+                                            right
+                                            mb-3
+                                        "
+                                    >
+                                        Featured Project
+                                    </h4>
+                                    <a
+                                        target="_blank"
+                                        href="https://surple.co.uk"
+                                        ><h3
+                                            class="
+                                                bold
+                                                project-title
+                                                right
+                                                mb-3
+                                            "
+                                        >
+                                            Surple Platform
+                                        </h3></a
+                                    >
+                                    <p class="project-text right">
+                                        Surple is an energy analytics platform
+                                        that helps businesses to understand
+                                        their energy use, identify issues, save
+                                        money and cut carbon. As well as being a
+                                        founder of Surple, I was also one of the
+                                        principal developers working on the
+                                        product.
+                                    </p>
+                                    <ul
+                                        class="
+                                            project-tech-list
+                                            right
+                                            mono
+                                            mt-4
+                                        "
+                                    >
+                                        <li>Laravel</li>
+                                        <li>PHP</li>
+                                        <li>JavaScript</li>
+                                        <li>Vue</li>
+                                        <li>MySQL</li>
+                                        <li>AWS</li>
+                                    </ul>
+                                    <div class="project-icons right">
+                                        <a
+                                            target="_blank"
+                                            href="https://surple.co.uk"
+                                            ><i
+                                                class="
+                                                    project-icon
+                                                    fas
+                                                    fa-rocket
+                                                "
+                                            ></i
+                                        ></a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="projects-inner">
+                                <div class="project-desc">
+                                    <h4
+                                        class="
+                                            mono
+                                            green
+                                            featured-project
+                                            left
+                                            mb-3
+                                        "
+                                    >
+                                        Featured Project
+                                    </h4>
+                                    <a
+                                        target="_blank"
+                                        href="https://surple.co.uk"
+                                        ><h3
+                                            class="bold project-title left mb-3"
+                                        >
+                                            Surple Website
+                                        </h3></a
+                                    >
+                                    <p class="project-text left">
+                                        I created the Surple website to show off
+                                        the product and to generate inbound
+                                        leads. The website has loads of
+                                        functionality such as a blog, the
+                                        ability to book a demo and the option to
+                                        subscribe to the newsletter. The website
+                                        significantly increased demo signups.
+                                    </p>
+                                    <ul
+                                        class="project-tech-list left mono mt-4"
+                                    >
+                                        <li>WordPress</li>
+                                        <li>PHP</li>
+                                        <li>JavaScript</li>
+                                        <li>HTML</li>
+                                        <li>CSS</li>
+                                    </ul>
+                                    <div class="project-icons left">
+                                        <a
+                                            target="_blank"
+                                            href="https://surple.co.uk"
+                                            ><i
+                                                class="
+                                                    project-icon
+                                                    fas
+                                                    fa-rocket
+                                                "
+                                            ></i
+                                        ></a>
+                                    </div>
+                                </div>
+                                <div class="project-image">
+                                    <div class="project-img-wrapper">
+                                        <a
+                                            target="_blank"
+                                            href="https://surple.co.uk"
+                                        >
+                                            <img
+                                                class="project-img"
+                                                src="resources/images/surple-website.jpg"
+                                                alt="screenshot of the Surple website"
+                                            />
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="projects-inner">
+                                <div class="project-image">
+                                    <div class="project-img-wrapper">
+                                        <a
+                                            target="_blank"
+                                            href="https://sean-oldfield.github.io/retro-to-do/"
+                                        >
+                                            <img
+                                                class="project-img"
+                                                src="resources/images/retro-to-do.jpg"
+                                                alt="screenshot of the Retro To Do app"
+                                            />
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="project-desc">
+                                    <h4
+                                        class="
+                                            mono
+                                            green
+                                            featured-project
+                                            right
+                                            mb-3
+                                        "
+                                    >
+                                        Featured Project
+                                    </h4>
+                                    <a
+                                        target="_blank"
+                                        href="https://sean-oldfield.github.io/retro-to-do/"
+                                        ><h3
+                                            class="
+                                                bold
+                                                project-title
+                                                right
+                                                mb-3
+                                            "
+                                        >
+                                            Retrotasks
+                                        </h3></a
+                                    >
+                                    <p class="project-text right">
+                                        A retro to-do app that's got the same
+                                        look and feel as an old arcade game. The
+                                        app has a levelling system and rewards
+                                        users for completing tasks. Click the
+                                        star on the home screen for a surprise.
+                                    </p>
+                                    <ul
+                                        class="
+                                            project-tech-list
+                                            right
+                                            mono
+                                            mt-4
+                                        "
+                                    >
+                                        <li>JavaScript</li>
+                                        <li>Vue</li>
+                                        <li>HTML</li>
+                                        <li>CSS</li>
+                                        <li>Bootsrap</li>
+                                    </ul>
+                                    <div class="project-icons right">
+                                        <a
+                                            target="_blank"
+                                            href="https://github.com/Sean-Oldfield/retro-to-do"
+                                            ><i
+                                                class="
+                                                    project-icon
+                                                    fab
+                                                    fa-github
+                                                "
+                                            ></i
+                                        ></a>
+                                        <a
+                                            target="_blank"
+                                            href="https://sean-oldfield.github.io/retro-to-do/"
+                                            ><i
+                                                class="
+                                                    project-icon
+                                                    fas
+                                                    fa-rocket
+                                                "
+                                            ></i
+                                        ></a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="projects-inner">
+                                <div class="project-desc">
+                                    <h4
+                                        class="
+                                            mono
+                                            green
+                                            featured-project
+                                            left
+                                            mb-3
+                                        "
+                                    >
+                                        Featured Project
+                                    </h4>
+                                    <a
+                                        target="_blank"
+                                        href="https://memestream.netlify.app/"
+                                        ><h3
+                                            class="bold project-title left mb-3"
+                                        >
+                                            Memestream
+                                        </h3></a
+                                    >
+                                    <p class="project-text left">
+                                        Memestream is a new-look feed that uses
+                                        the Reddit API to pull in the most
+                                        popular memes from the most popular
+                                        subreddits. You can view comments,
+                                        switch subreddits and search.
+                                    </p>
+                                    <ul
+                                        class="project-tech-list left mono mt-4"
+                                    >
+                                        <li>React</li>
+                                        <li>Redux</li>
+                                        <li>JavaScript</li>
+                                        <li>HTML</li>
+                                        <li>CSS</li>
+                                    </ul>
+                                    <div class="project-icons left">
+                                        <a
+                                            target="_blank"
+                                            href="https://github.com/Sean-Oldfield/memestream"
+                                            ><i
+                                                class="
+                                                    project-icon
+                                                    fab
+                                                    fa-github
+                                                "
+                                            ></i
+                                        ></a>
+                                        <a
+                                            target="_blank"
+                                            href="https://memestream.netlify.app/"
+                                            ><i
+                                                class="
+                                                    project-icon
+                                                    fas
+                                                    fa-rocket
+                                                "
+                                            ></i
+                                        ></a>
+                                    </div>
+                                </div>
+                                <div class="project-image">
+                                    <div class="project-img-wrapper">
+                                        <a
+                                            target="_blank"
+                                            href="https://memestream.netlify.app/"
+                                        >
+                                            <img
+                                                class="project-img"
+                                                src="resources/images/memestream.jpg"
+                                                alt="screenshot of the Memestream app"
+                                            />
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <h3
+                                class="
+                                    other-projects-title
+                                    bold
+                                    scroll-reveal-early
+                                "
+                            >
+                                Other Projects
+                            </h3>
+                            <hr class="mb-5 scroll-reveal-early" />
+
+                            <div
+                                class="other-projects-inner scroll-reveal-early"
+                            >
+                                <div class="other-project">
+                                    <div class="other-project-icons mb-4">
+                                        <i class="far fa-folder green"></i>
+                                        <span>
+                                            <a
+                                                target="_blank"
+                                                href="https://github.com/Sean-Oldfield/portfolio-site"
+                                                ><i
+                                                    class="
+                                                        project-icon
+                                                        fab
+                                                        fa-github
+                                                    "
+                                                ></i
+                                            ></a>
+                                            <a
+                                                target="_blank"
+                                                href="https://seanoldfield.tech/"
+                                                ><i
+                                                    class="
+                                                        project-icon
+                                                        fas
+                                                        fa-rocket
+                                                    "
+                                                ></i
+                                            ></a>
+                                        </span>
+                                    </div>
+                                    <a
+                                        target="_blank"
+                                        href="https://seanoldfield.tech/"
+                                        ><h4 class="other-project-title bold">
+                                            Portfolio Site
+                                        </h4></a
+                                    >
+                                    <p class="other-project-desc">
+                                        The site that you're on right now! I
+                                        needed something to show off my
+                                        experience and skills as a developer, so
+                                        I built this site from scratch with
+                                        HTML, CSS & JavaScript. I hope you like
+                                        it.
+                                    </p>
+                                    <ul
+                                        class="project-tech-list mt-5 left mono"
+                                    >
+                                        <li>HTML</li>
+                                        <li>CSS</li>
+                                        <li>Vue</li>
+                                    </ul>
+                                </div>
+
+                                <div class="other-project">
+                                    <div class="other-project-icons mb-4">
+                                        <i class="far fa-folder green"></i>
+                                        <span>
+                                            <a
+                                                target="_blank"
+                                                href="https://surple.co.uk/pricing"
+                                                ><i
+                                                    class="
+                                                        project-icon
+                                                        fas
+                                                        fa-rocket
+                                                    "
+                                                ></i
+                                            ></a>
+                                        </span>
+                                    </div>
+                                    <a
+                                        target="_blank"
+                                        href="https://surple.co.uk/pricing"
+                                        ><h4 class="other-project-title bold">
+                                            Pricing Slider
+                                        </h4></a
+                                    >
+                                    <p class="other-project-desc">
+                                        Built with HTML, CSS & JavaScript, this
+                                        pricing slider makes it easy for SaaS
+                                        businesses with complex pricing models
+                                        to let prospective buyers know how much
+                                        their subscription would cost.
+                                    </p>
+                                    <ul
+                                        class="project-tech-list mt-5 left mono"
+                                    >
+                                        <li>JavaScript</li>
+                                        <li>HTML</li>
+                                        <li>CSS</li>
+                                    </ul>
+                                </div>
+
+                                <div class="other-project">
+                                    <div class="other-project-icons mb-4">
+                                        <i class="far fa-folder green"></i>
+                                        <span>
+                                            <a
+                                                target="_blank"
+                                                href="https://surple.co.uk/mpan-scanner"
+                                                ><i
+                                                    class="
+                                                        project-icon
+                                                        fas
+                                                        fa-rocket
+                                                    "
+                                                ></i
+                                            ></a>
+                                        </span>
+                                    </div>
+                                    <a
+                                        target="_blank"
+                                        href="https://surple.co.uk/mpan-scanner"
+                                        ><h4 class="other-project-title bold">
+                                            MPAN Scanner
+                                        </h4></a
+                                    >
+                                    <p class="other-project-desc">
+                                        This scanner is built with HTML, CSS &
+                                        JavaScript. It allows energy
+                                        professionals to check if a meter's MPAN
+                                        is valid and returns information about a
+                                        meter's profile and network operator.
+                                    </p>
+                                    <ul
+                                        class="project-tech-list mt-5 left mono"
+                                    >
+                                        <li>JavaScript</li>
+                                        <li>HTML</li>
+                                        <li>CSS</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </section>
+
+                        <section id="interests" class="scroll-reveal">
+                            <div class="inner">
+                                <div class="interests-text">
+                                    <h2>
+                                        <span class="green mono heading-num"
+                                            >04.</span
+                                        >
+                                        <span class="bold">My Interests</span>
+                                    </h2>
+                                    <hr class="mb-5" />
+                                    <p>
+                                        In my spare time, I'm a keen amateur
+                                        photographer that loves to take photos
+                                        of anything to do with nature. I taught
+                                        myself how to use a DSLR camera and how
+                                        to use editing software such as
+                                        Photoshop and Lightroom. Check out my
+                                        <a
+                                            target="_blank"
+                                            href="https://www.instagram.com/s.j.o.photography/"
+                                            class="inline-link green"
+                                            >Instagram</a
+                                        >
+                                        page, where I upload some of my best
+                                        shots.
+                                    </p>
+                                    <p>
+                                        I also love sport, particularly football
+                                        and basketball. I'm a big Liverpool fan,
+                                        and before I went to university, I
+                                        played basketball at the county level
+                                        for Gwent.
+                                    </p>
+                                    <p>
+                                        Back in 2013, I did a lot of coaching
+                                        and even received the Community Sports
+                                        Volunteer of the Year Award after
+                                        delivering over 300 hours of coaching to
+                                        children in the community.
+                                    </p>
+                                    <p>Some of my other interests include:</p>
+                                    <ul class="interests-list mono">
+                                        <li>
+                                            <i
+                                                class="fas fa-caret-right green"
+                                            ></i>
+                                            Playing video games (favourites
+                                            include The Witcher 3 & Skyrim).
+                                            &#127918;
+                                        </li>
+                                        <li>
+                                            <i
+                                                class="fas fa-caret-right green"
+                                            ></i>
+                                            Watching Marvel movies & tv shows.
+                                            &#127871;
+                                        </li>
+                                        <li>
+                                            <i
+                                                class="fas fa-caret-right green"
+                                            ></i>
+                                            Spending time with my two cats
+                                            Lottie & Elton. &#128049;
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="interests-image">
+                                    <div class="img-wrapper">
+                                        <a
+                                            target="_blank"
+                                            href="https://www.instagram.com/s.j.o.photography/"
+                                        >
+                                            <img
+                                                id="photography-img"
+                                                src="resources/images/jaguar.jpg"
+                                                alt="picture of a black jaguar"
+                                            />
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+
+                        <section id="contact" class="scroll-reveal">
+                            <h3 class="green mono fs-1-rem mb-2">
+                                05. What's Next?
+                            </h3>
+                            <h1 class="bold mb-3">Get In Touch</h1>
+                            <p id="contact-text" class="mb-5">
+                                Although I'm not currently looking for a new
+                                job, my inbox is always open. Whether you have a
+                                question or want to say hi, drop me an email,
+                                and I'll do my best to get back to you!
+                            </p>
+                            <button>
+                                <a
+                                    target="_blank"
+                                    href="mailto:seanoldfield95@gmail.com"
+                                    >Say Hello</a
+                                >
+                            </button>
+                        </section>
+                    </main>
+                </div>
+
+                <aside
+                    class="
+                        d-none d-sm-none d-md-flex
+                        col-1
+                        icons-gutter
+                        right
+                        scroll-reveal-early
+                    "
+                >
+                    <ul class="contact-icons">
+                        <a
+                            target="_blank"
+                            href="mailto:seanoldfield95@gmail.com"
+                            ><li class="gutter-email">
+                                seanoldfield95@gmail.com
+                            </li></a
+                        >
+                        <li class="vertical-line"></li>
+                    </ul>
+                </aside>
             </div>
         </div>
-    </nav>
 
-    <div class="container">
-        <div class="row">
+        <footer class="mono">
+            <ul class="footer-icons">
+                <li>
+                    <a target="_blank" href="https://github.com/Sean-Oldfield"
+                        ><i class="fab fa-github contact-icon"></i
+                    ></a>
+                </li>
+                <li>
+                    <a
+                        target="_blank"
+                        href="https://www.linkedin.com/in/sean-oldfield-a8a26a121/"
+                        ><i class="fab fa-linkedin contact-icon"></i
+                    ></a>
+                </li>
+                <li>
+                    <a
+                        target="_blank"
+                        href="https://www.instagram.com/s.j.o.photography/"
+                        ><i class="fab fa-instagram contact-icon"></i
+                    ></a>
+                </li>
+            </ul>
+            <p>Built By Sean Oldfield 2021</p>
+        </footer>
 
-            <aside class="d-none d-sm-none d-md-flex col-1 icons-gutter left scroll-reveal-early">
-                <ul class="contact-icons">
-                    <span class="icons-holder">
-                        <li><a target="_blank" href="https://github.com/Sean-Oldfield"><i class="fab fa-github contact-icon"></i></a></li>
-                        <li><a target="_blank" href="https://www.linkedin.com/in/sean-oldfield-a8a26a121/"><i class="fab fa-linkedin contact-icon"></i></a></li>
-                        <li><a target="_blank" href="https://www.instagram.com/s.j.o.photography/"><i class="fab fa-instagram contact-icon"></i></a></li>
-                    </span>
-                    <li class="vertical-line"></li>
-                </ul>
-            </aside>
-
-            <div class="col-xs-12 col-md-10">
-                <main id="app" v-cloak>
-
-                    <section id="intro" class="scroll-reveal">
-                        <p class="mono green fs-1-rem">Hi, my name is</p>
-                        <h1 class="bold big-heading">Sean Oldfield.</h1>
-                        <h2 class="bold slate big-heading mb-4">I build things for the web.</h2>
-                        <p id="intro-text">I'm a software engineer from Wales that specialises in designing and building exceptional digital products. Currently, I'm focused on creating tech that can help save the planet at <a href="https://surple.co.uk" target="_blank" class="inline-link green">Surple</a>.</p>
-                        <button class="mt-4 cta-btn"><a target="_blank" href="mailto:seanoldfield95@gmail.com">Get In Touch</a></button>
-                    </section>
-
-                    <section id="about" class="scroll-reveal">
-                        <div class="inner">
-                            <div class="about-text">
-                                <h2><span class="green mono heading-num">01.</span> <span class="bold">About Me</span></h2>
-                                <hr class="mb-5">
-                                <p>Hello! I'm Sean. I'm a full-stack software developer with 4+ years of experience designing, building, testing, and maintaining software. My journey in tech is pretty unusual. At the age of 21, I was studying Biology at university and hadn't written a line of code in my life. Only a year later, I founded my first tech startup.</p>
-                                <p>Fast-forward to today, and I've delivered software to large clients, including an energy supplier, a hotel resort and a city council. I have also realised my passion for building tech that has a positive impact.</p>
-                                <p>So far in my career, I've been exposed to loads of different programming languages and frameworks. Here are a few I've been working with recently:</p>
-                                <div class="tech-lists">
-                                    <ul class="mono">
-                                        <li><i class="fas fa-caret-right green"></i> Laravel</li>
-                                        <li><i class="fas fa-caret-right green"></i> PHP</li>
-                                        <li><i class="fas fa-caret-right green"></i> JavaScript</li>
-                                        <li><i class="fas fa-caret-right green"></i> React</li>
-                                        <li><i class="fas fa-caret-right green"></i> Vue</li>
-                                        <li><i class="fas fa-caret-right green"></i> HTML & CSS</li>
-                                    </ul>
-                                    <ul class="mono">
-                                        <li><i class="fas fa-caret-right green"></i> MySQL</li>
-                                        <li><i class="fas fa-caret-right green"></i> Symfony</li>
-                                        <li><i class="fas fa-caret-right green"></i> Git</li>
-                                        <li><i class="fas fa-caret-right green"></i> AWS</li>
-                                        <li><i class="fas fa-caret-right green"></i> WordPress</li>
-                                        <li><i class="fas fa-caret-right green"></i> Shopify</li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="about-image">
-                                <div class="img-wrapper">
-                                    <a target="_blank" href="https://www.linkedin.com/in/sean-oldfield-a8a26a121/">
-                                        <img id="about-headshot" src="resources/images/headshot.jpeg" alt="picture of Sean Oldfield">
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </section>
-
-                    <section id="experience" class="scroll-reveal">
-                        <h2><span class="green mono heading-num">02.</span><span class="bold"> My Experience</span></h2>
-                        <hr class="mb-5">
-                        <div class="experience-inner">
-                            <div class="experience-jobs">
-                                <ul class="mono jobs-list">
-                                    <li v-bind:class="{ selected: selectedJob === 'surple' }" class="jobs-list-item" @click="selectJob('surple')">Surple</li>
-                                    <li v-bind:class="{ selected: selectedJob === 'alacrity' }" class="jobs-list-item" @click="selectJob('alacrity')">Alacrity</li>
-                                    <li v-bind:class="{ selected: selectedJob === 'bootcamp' }" class="jobs-list-item" @click="selectJob('bootcamp')">Bootcamp</li>
-                                    <li v-bind:class="{ selected: selectedJob === 'university' }" class="jobs-list-item" @click="selectJob('university')">University</li>
-                                </ul>
-                            </div>
-                            <div class="experience-details">
-                                <h3 class="bold job-title">{{ jobs[selectedJob].title }} <span class="green">@ <a target="_blank" v-bind:href="jobs[selectedJob].url" class="inline-link">{{ jobs[selectedJob].company }}</a></span></h3>
-                                <h4 class="mono job-dates mb-4">{{ jobs[selectedJob].dates }}</h4>
-                                <ul class="experience-list">
-                                    <li v-for="line in jobs[selectedJob].desc" class="mb-3"> 
-                                     {{ line }}
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </section>
-
-                    <section id="projects" class="scroll-reveal">
-                        <h2><span class="green mono heading-num">03.</span> <span class="bold">My Work</span></h2>
-                        <hr class="mb-5">
-                        <div class="projects-inner">
-                            <div class="project-image">
-                                <div class="project-img-wrapper">
-                                    <a target="_blank" href="https://surple.co.uk">
-                                        <img class="project-img" src="resources/images/features-data-diversity.jpg" alt="screenshot of the Surple platform">
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="project-desc">
-                                <h4 class="mono green featured-project right mb-3">Featured Project</h4>
-                                <a target="_blank" href="https://surple.co.uk"><h3 class="bold project-title right mb-3">Surple Platform</h3></a>
-                                <p class="project-text right">Surple is an energy analytics platform that helps businesses to understand their energy use, identify issues, save money and cut carbon. As well as being a founder of Surple, I was also one of the principal developers working on the product.</p>
-                                <ul class="project-tech-list right mono mt-4">
-                                    <li>Laravel</li>
-                                    <li>PHP</li>
-                                    <li>JavaScript</li>
-                                    <li>Vue</li>
-                                    <li>MySQL</li>
-                                    <li>AWS</li>
-                                </ul>
-                                <div class="project-icons right">
-                                    <a target="_blank" href="https://surple.co.uk"><i class="project-icon fas fa-rocket"></i></a>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="projects-inner">
-                            <div class="project-desc">
-                                <h4 class="mono green featured-project left mb-3">Featured Project</h4>
-                                <a target="_blank" href="https://surple.co.uk"><h3 class="bold project-title left mb-3">Surple Website</h3></a>
-                                <p class="project-text left">I created the Surple website to show off the product and to generate inbound leads. The website has loads of functionality such as a blog, the ability to book a demo and the option to subscribe to the newsletter. The website significantly increased demo signups.</p>
-                                <ul class="project-tech-list left mono mt-4">
-                                    <li>WordPress</li>
-                                    <li>PHP</li>
-                                    <li>JavaScript</li>
-                                    <li>HTML</li>
-                                    <li>CSS</li>
-                                </ul>
-                                <div class="project-icons left">
-                                    <a target="_blank" href="https://surple.co.uk"><i class="project-icon fas fa-rocket"></i></a>
-                                </div>
-                            </div>
-                            <div class="project-image">
-                                <div class="project-img-wrapper">
-                                    <a target="_blank" href="https://surple.co.uk">
-                                        <img class="project-img" src="resources/images/surple-website.jpg" alt="screenshot of the Surple website">
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="projects-inner">
-                            <div class="project-image">
-                                <div class="project-img-wrapper">
-                                    <a target="_blank" href="https://sean-oldfield.github.io/retro-to-do/">
-                                        <img class="project-img" src="resources/images/retro-to-do.jpg" alt="screenshot of the Retro To Do app">
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="project-desc">
-                                <h4 class="mono green featured-project right mb-3">Featured Project</h4>
-                                <a target="_blank" href="https://sean-oldfield.github.io/retro-to-do/"><h3 class="bold project-title right mb-3">Retrotasks</h3></a>
-                                <p class="project-text right">A retro to-do app that's got the same look and feel as an old arcade game. The app has a levelling system and rewards users for completing tasks. Click the star on the home screen for a surprise.</p>
-                                <ul class="project-tech-list right mono mt-4">
-                                    <li>JavaScript</li>
-                                    <li>Vue</li>
-                                    <li>HTML</li>
-                                    <li>CSS</li>
-                                    <li>Bootsrap</li>
-                                </ul>
-                                <div class="project-icons right">
-                                    <a target="_blank" href="https://github.com/Sean-Oldfield/retro-to-do"><i class="project-icon fab fa-github"></i></a>
-                                    <a target="_blank" href="https://sean-oldfield.github.io/retro-to-do/"><i class="project-icon fas fa-rocket"></i></a>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="projects-inner">
-                            <div class="project-desc">
-                                <h4 class="mono green featured-project left mb-3">Featured Project</h4>
-                                <a target="_blank" href="https://memestream.netlify.app/"><h3 class="bold project-title left mb-3">Memestream</h3></a>
-                                <p class="project-text left">Memestream is a new-look feed that uses the Reddit API to pull in the most popular memes from the most popular subreddits. You can view comments, switch subreddits and search.</p>
-                                <ul class="project-tech-list left mono mt-4">
-                                    <li>React</li>
-                                    <li>Redux</li>
-                                    <li>JavaScript</li>
-                                    <li>HTML</li>
-                                    <li>CSS</li>
-                                </ul>
-                                <div class="project-icons left">
-                                    <a target="_blank" href="https://github.com/Sean-Oldfield/memestream"><i class="project-icon fab fa-github"></i></a>
-                                    <a target="_blank" href="https://memestream.netlify.app/"><i class="project-icon fas fa-rocket"></i></a>
-                                </div>
-                            </div>
-                            <div class="project-image">
-                                <div class="project-img-wrapper">
-                                    <a target="_blank" href="https://memestream.netlify.app/">
-                                        <img class="project-img" src="resources/images/memestream.jpg" alt="screenshot of the Memestream app">
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-
-
-                        <h3 class="other-projects-title bold scroll-reveal-early">Other Projects</h3>
-                        <hr class="mb-5 scroll-reveal-early">
-
-                        <div class="other-projects-inner scroll-reveal-early">
-                            <div class="other-project">
-                                <div class="other-project-icons mb-4">
-                                    <i class="far fa-folder green"></i>
-                                    <span>
-                                        <a target="_blank" href="https://github.com/Sean-Oldfield/portfolio-site"><i class="project-icon fab fa-github"></i></a>
-                                        <a target="_blank" href="https://seanoldfield.tech/"><i class="project-icon fas fa-rocket"></i></a>
-                                    </span>
-                                </div>
-                                <a target="_blank" href="https://seanoldfield.tech/"><h4 class="other-project-title bold">Portfolio Site</h4></a>
-                                <p class="other-project-desc">The site that you're on right now! I needed something to show off my experience and skills as a developer, so I built this site from scratch with HTML, CSS & JavaScript. I hope you like it.</p>
-                                <ul class="project-tech-list mt-5 left mono">
-                                    <li>HTML</li>
-                                    <li>CSS</li>
-                                    <li>Vue</li>
-                                </ul>
-                            </div>
-
-                            <div class="other-project">
-                                <div class="other-project-icons mb-4">
-                                    <i class="far fa-folder green"></i>
-                                    <span>
-                                        <a target="_blank" href="https://surple.co.uk/pricing"><i class="project-icon fas fa-rocket"></i></a>
-                                    </span>
-                                </div>
-                                <a target="_blank" href="https://surple.co.uk/pricing"><h4 class="other-project-title bold">Pricing Slider</h4></a>
-                                <p class="other-project-desc">Built with HTML, CSS & JavaScript, this pricing slider makes it easy for SaaS businesses with complex pricing models to let prospective buyers know how much their subscription would cost.</p>
-                                <ul class="project-tech-list mt-5 left mono">
-                                    <li>JavaScript</li>
-                                    <li>HTML</li>
-                                    <li>CSS</li>
-                                </ul>
-                            </div>
-
-                            <div class="other-project">
-                                <div class="other-project-icons mb-4">
-                                    <i class="far fa-folder green"></i>
-                                    <span>
-                                        <a target="_blank" href="https://surple.co.uk/mpan-scanner"><i class="project-icon fas fa-rocket"></i></a>
-                                    </span>
-                                </div>
-                                <a target="_blank" href="https://surple.co.uk/mpan-scanner"><h4 class="other-project-title bold">MPAN Scanner</h4></a>
-                                <p class="other-project-desc">This scanner is built with HTML, CSS & JavaScript. It allows energy professionals to check if a meter's MPAN is valid and returns information about a meter's profile and network operator.</p>
-                                <ul class="project-tech-list mt-5 left mono">
-                                    <li>JavaScript</li>
-                                    <li>HTML</li>
-                                    <li>CSS</li>
-                                </ul>
-                            </div>
-            
-                        </div>
-
-                    </section>
-
-                    <section id="interests" class="scroll-reveal">
-                        <div class="inner">
-                            <div class="interests-text">
-                                <h2><span class="green mono heading-num">04.</span> <span class="bold">My Interests</span></h2>
-                                <hr class="mb-5">
-                                <p>In my spare time, I'm a keen amateur photographer that loves to take photos of anything to do with nature. I taught myself how to use a DSLR camera and how to use editing software such as Photoshop and Lightroom. Check out my <a target="_blank" href="https://www.instagram.com/s.j.o.photography/" class="inline-link green">Instagram</a> page, where I upload some of my best shots.</p>
-                                <p>I also love sport, particularly football and basketball. I'm a big Liverpool fan, and before I went to university, I played basketball at the county level for Gwent.</p>
-                                <p>Back in 2013, I did a lot of coaching and even received the Community Sports Volunteer of the Year Award after delivering over 300 hours of coaching to children in the community.</p>
-                                <p>Some of my other interests include:</p>
-                                <ul class="interests-list mono">
-                                    <li><i class="fas fa-caret-right green"></i> Playing video games (favourites include The Witcher 3 & Skyrim). &#127918;</li>
-                                    <li><i class="fas fa-caret-right green"></i> Watching Marvel movies & tv shows. &#127871;</li>
-                                    <li><i class="fas fa-caret-right green"></i> Spending time with my two cats Lottie & Elton. &#128049;</li>
-                                </ul>
-                            </div>
-                            <div class="interests-image">
-                                <div class="img-wrapper">
-                                    <a target="_blank" href="https://www.instagram.com/s.j.o.photography/">
-                                        <img id="photography-img" src="resources/images/jaguar.jpg" alt="picture of a black jaguar">
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </section>
-
-                    <section id="contact" class="scroll-reveal">
-                        <h3 class="green mono fs-1-rem mb-2">05. What's Next?</h3>
-                        <h1 class="bold mb-3">Get In Touch</h1>
-                        <p id="contact-text" class="mb-5">Although I'm not currently looking for a new job, my inbox is always open. Whether you have a question or want to say hi, drop me an email, and I'll do my best to get back to you!</p>
-                        <button><a target="_blank" href="mailto:seanoldfield95@gmail.com">Say Hello</a></button>
-                    </section>
-
-                </main>
-            </div>
-
-            <aside class="d-none d-sm-none d-md-flex col-1 icons-gutter right scroll-reveal-early">
-                <ul class="contact-icons">
-                    <a target="_blank" href="mailto:seanoldfield95@gmail.com"><li class="gutter-email">seanoldfield95@gmail.com</li></a>
-                    <li class="vertical-line"></li>
-                </ul>
-            </aside>
-
-        </div>
-    </div>
-
-    <footer class="mono">
-        <ul class="footer-icons">
-            <li><a target="_blank" href="https://github.com/Sean-Oldfield"><i class="fab fa-github contact-icon"></i></a></li>
-            <li><a target="_blank" href="https://www.linkedin.com/in/sean-oldfield-a8a26a121/"><i class="fab fa-linkedin contact-icon"></i></a></li>
-            <li><a target="_blank" href="https://www.instagram.com/s.j.o.photography/"><i class="fab fa-instagram contact-icon"></i></a></li>
-        </ul>
-        <p>Built By Sean Oldfield 2021</p>
-    </footer>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14"></script>
-    <script src="app.js"></script>
-    <script>  
-        ScrollReveal().reveal('.scroll-reveal-early', { delay: 200 }); 
-        ScrollReveal().reveal('.scroll-reveal', { delay: 500 });
-    </script>
-</body>
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+            crossorigin="anonymous"
+        ></script>
+        <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14"></script>
+        <script src="app.js"></script>
+        <script>
+            ScrollReveal().reveal('.scroll-reveal-early', { delay: 200 });
+            ScrollReveal().reveal('.scroll-reveal', { delay: 500 });
+        </script>
+    </body>
 </html>
